@@ -3,7 +3,6 @@ body {
   font-family: "PT Sans", sans-serif;
 }
 body .container {
-  border: 1px solid red;
   width: 65%;
   margin: 0 auto;
 }
@@ -28,7 +27,6 @@ body header.container {
   text-align: center;
 }
 body header.container nav {
-  border: 1px solid red;
   background-color: #4b3a29;
   display: flex;
   flex-direction: row;
@@ -61,21 +59,24 @@ body main.container {
   }
 }
 body main.container section {
-  border: 1px solid blue;
   padding: 0.8rem;
   color: white;
   width: 70%;
+}
+@media screen and (max-width: 960px) {
+  body main.container section {
+    width: 96.5%;
+  }
 }
 body main.container section img {
   border-radius: 10px;
 }
 @media screen and (max-width: 960px) {
-  body main.container section {
+  body main.container section img {
     width: 100%;
   }
 }
 body main.container aside {
-  border: 1px solid yellow;
   background-color: #f8fbfa;
   text-align: justify;
   padding: 1.5rem;
@@ -86,7 +87,7 @@ body main.container aside p {
 }
 @media screen and (max-width: 960px) {
   body main.container aside {
-    width: 100%;
+    width: 93.5%;
   }
 }
 @media screen and (max-width: 560px) {
